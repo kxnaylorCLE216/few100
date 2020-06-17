@@ -25,6 +25,8 @@ describe('functions', () => {
             return a / b;
         }
 
+        expect(divide(3, 3)).toBe(1);
+
         const formatName = (first: string, last: string): { fullName: string } => ({ fullName: `${last}, ${first}` });
         const name = formatName('Han', 'Solo');
         expect(name.fullName).toBe('Solo, Han');
